@@ -1,1 +1,0 @@
-Projeto de estudos para automação de API através do Pytest
