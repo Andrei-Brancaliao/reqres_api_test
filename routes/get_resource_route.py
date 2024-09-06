@@ -1,10 +1,16 @@
-
+"""
+Resource Route
+"""
 
 import requests
 
 ROUTE = "{resource}"
 
 def get_resource_route(setup, page = "", per_page = "",):
+    """
+    Fetches a resource list
+    """
+    
     if page != "" or per_page != "":
         params = {
             "page": page, 

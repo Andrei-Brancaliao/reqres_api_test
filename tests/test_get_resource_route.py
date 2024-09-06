@@ -5,7 +5,10 @@ from schemas.resource_schema import success_resource_schema
 
 
 def test_success_get_resource_without_params(setup):
-
+    """
+    Fetches a resource list without any param
+    """
+    
     response = get_resource_route(setup)
     assert response.status_code == 200
     response_json = response.json()
@@ -16,6 +19,9 @@ def test_success_get_resource_without_params(setup):
 
 
 def test_success_get_resource_with_page_param(setup):
+    """
+    Fetches a resource list with page param
+    """
     
     page = 1
     
@@ -32,6 +38,9 @@ def test_success_get_resource_with_page_param(setup):
         pytest.fail(f"Error to Post Qualified: {exception}")
 
 def test_success_get_resource_with_page_and_per_page_param(setup):
+    """
+    Fetches a resource list with page and per page param
+    """
     
     page = 3
     per_page = 2
