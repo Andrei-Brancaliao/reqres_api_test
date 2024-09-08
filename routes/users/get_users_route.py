@@ -5,7 +5,7 @@ ROUTE = "users"
 
 def get_users_route(setup, page = "", per_page = "",):
     """
-    Fetches a resource list
+    Fetches a user list
     """
     
     if page != "" or per_page != "":

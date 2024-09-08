@@ -1,8 +1,8 @@
 from jsonschema import ValidationError, validate
 import pytest
 
-from routes.get_users_route import get_users_route
-from schemas.users_schema import success_users_schema
+from routes.users.get_users_route import get_users_route
+from schemas.users.users_schema import success_users_schema
 
 
 def test_success_get_users_without_params(setup):
